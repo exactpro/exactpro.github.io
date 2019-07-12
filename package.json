@@ -34,7 +34,7 @@
         "scrollreveal": "4.0.1"
     },
     "devDependencies": {
-        "browser-sync": "2.26.5",
+        "browser-sync": "2.26.7",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "6.0.0",
         "gulp-clean-css": "3.10.0",
