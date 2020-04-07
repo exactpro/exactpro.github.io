@@ -32,15 +32,5 @@
         "jquery.easing": "^1.4.1",
         "magnific-popup": "^1.1.0",
         "scrollreveal": "4.0.1"
-    },
-    "devDependencies": {
-        "browser-sync": "2.26.7",
-        "gulp": "^4.0.2",
-        "gulp-autoprefixer": "6.0.0",
-        "gulp-clean-css": "3.10.0",
-        "gulp-header": "2.0.5",
-        "gulp-rename": "1.4.0",
-        "gulp-sass": "4.0.2",
-        "gulp-uglify": "3.0.1"
     }
 }
