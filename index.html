@@ -247,8 +247,25 @@
             </a>
           </div>
         </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center mt-5">
+            <hr class="my-4">        
+            <p>
+              Copyright © 2009 - 2020 Exactpro. All Rights Reserved. Exactpro
+                refers to Exactpro Systems Limited, registered in England and
+                Wales, and/or one of its subsidiaries, each of which is a
+                separate legal entity, registered in the relevant jurisdictions.<br><a href="https://exactpro.com/terms-and-conditions">Terms and Conditions</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://exactpro.com/privacy-policy">Privacy policy</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://exactpro.com/cookies-policy">Cookies policy</a>
+            </p>
+          </div>
+        </div>
       </div>
     </section>
+    <div id="cookie_policy" style="display: none;">
+      <div class="container">
+        <p>The EXACTPRO website uses cookies for analytical purposes. You can block, disable or delete cookie files and similar elements at any time if your web browser or device allows for that. In that case, however, you may not be able to use some of this website’s functions, services, applications or tools. If you consent to the use of cookies, please click “Yes, I agree”. <a href="/cookies-policy">Cookies policy</a></p>
+        <button class="btn btn-default">Yes, I agree</button>
+      </div>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -261,6 +278,15 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script>
+      $(function() {
+        if (localStorage.getItem('use_cookie') != 1) $("#cookie_policy").show();
+        $("div#cookie_policy button").click(function(){
+          localStorage.setItem('use_cookie', 1);
+          $("#cookie_policy").hide();
+        });
+      });
+    </script>
 
   </body>
 
